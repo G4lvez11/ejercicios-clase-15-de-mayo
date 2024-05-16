@@ -4,23 +4,23 @@ using namespace std;
 
 int main()
 {
-    float a,b,c,x1,x2,r;
+    float a=0.00 ,b=0.00 ,c=0.00,x1=0.00,x2=0.00,res=0.00;
 
     cout << "El programa resuelve ecuaciones de segundo grado\n";
-    cout << "Ingrese a= ";
+    cout << "Ingrese el valor de a " << "\n";
     cin >> a;
-    cout << "Ingrese b= ";
+    cout << "Ingrese el valor de b " << "\n";
     cin >> b;
-    cout << "Ingrese c= ";
+    cout << "Ingrese el valor de c " << "\n";
     cin >> c;
 
     if (a !=0 )
     {
-        r = pow(b,2)-4*a*c;
-        if (r >=0)
+        res = pow(b,2)-4*a*c;
+        if (res >=0)
         {
-            x1 = (-b+sqrt(r))/2/a;
-            x2 = (-b-sqrt(r))/2/a;
+            x1 = (-b+sqrt(res))/2/a;
+            x2 = (-b-sqrt(res))/2/a;
             cout << "Las raices de la ecuaciones son: x1= \n" << x1 << "x2= \n" << x2 << "\n";
         }
         else
